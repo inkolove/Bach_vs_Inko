@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+<title>インベーダーゲーム</title>
+<style>
+        body { font-family: 'Arial', sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background-color: #e6e6e6; }
+        canvas { border: 1px solid black; background-color: #fff; }
+        #controls { margin-top: 10px; display: flex; gap: 10px; }
+        button { padding: 10px 20px; font-size: 16px; }
+    </style>
+</head>
+<body><div style="margin-top: 20px;"><button id="resetGame" style=" margin-bottom: 20px;">New Game</button></div>
+<canvas height="480" id="gameCanvas" width="320"></canvas>
+<div id="controls">
+<button id="moveLeft">←</button>
+<button id="attack">攻撃</button>
+<button id="moveRight">→</button>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
